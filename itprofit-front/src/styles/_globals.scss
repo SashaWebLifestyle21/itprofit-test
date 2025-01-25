@@ -1,0 +1,31 @@
+@use 'mixins' as *;
+@use 'media' as *;
+
+body {
+	font-family: var(--font-family-base);
+	font-size: 16px;
+	font-weight: 500;
+	background-color: var(--color-secondary);
+	color: var(--color-dark);
+	transition-duration: var(--transition-duration);
+}
+
+a {
+	color: inherit;
+
+	@include hover {
+		color: var(--color-accent);
+	}
+
+	&[class] {
+		text-decoration: none;
+	}
+}
+
+textarea {
+	resize: none;
+}
+
+h1 {
+	text-align: center;
+}

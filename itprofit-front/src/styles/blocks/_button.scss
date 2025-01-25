@@ -1,0 +1,20 @@
+@use '../media' as *;
+
+.button {
+	padding: 10px 60px;
+	max-width: 175px;
+	border: var(--border);
+	border-radius: 12px;
+	background-color: var(--color-accent);
+	color: var(--color-light);
+	transition-duration: var(--transition-duration);
+
+	&:disabled {
+		color: var(--color-secondary);
+	}
+
+	@include hover {
+		background-color: var(--color-secondary);
+		color: var(--color-accent);
+	}
+}

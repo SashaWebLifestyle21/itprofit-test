@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ItProfit</title>
+	</head>
+	<body>
+		<div class="container">
+			<main class="content">
+				<section class="section">
+					<h1>ItProfit!</h1>
+					<div class="contact-us">
+						<form id="form" class="contact-us___form form">
+							<span class="loader hide"></span>
+							<div class="form-group">
+								<label for="name">Имя</label>
+								<input id="name" name="name" type="text" required />
+								<span id="name-error" class="form-group__error"></span>
+							</div>
+							<div class="form-group form-group__input">
+								<label for="email">E-mail</label>
+								<input id="email" name="email" type="email" required />
+								<span id="email-error" class="form-group__error"></span>
+							</div>
+							<div class="form-group form-group__input">
+								<label for="phone">Телефон</label>
+								<input
+									id="phone"
+									name="phone"
+									type="tel"
+									required
+									placeholder="+375"
+								/>
+								<span id="phone-error" class="form-group__error"></span>
+							</div>
+							<div class="form-group form-group__textarea">
+								<label for="message">Сообщение</label>
+								<textarea id="message" name="message" required></textarea>
+								<span id="message" class="form-group__error"></span>
+							</div>
+							<button class="form__button button" type="submit">Submit</button>
+							<p class="form-group__success hide"></p>
+						</form>
+					</div>
+					<div class="modal">
+						<div class="modal__wrapper">
+							<h2 class="modal__title">Заяц в модальном окне)</h2>
+							<img
+								src="./assets/images/zayac.jpg"
+								alt="zayac"
+								width="400"
+								height="400"
+							/>
+							<button class="modal__close button"><span></span></button>
+						</div>
+					</div>
+					<button class="modal__open button">Открыть модалку</button>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>

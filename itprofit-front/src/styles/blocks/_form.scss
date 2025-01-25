@@ -1,0 +1,10 @@
+.form {
+	position: relative;
+	border: var(--border);
+	padding: var(--container-padding-x);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+}

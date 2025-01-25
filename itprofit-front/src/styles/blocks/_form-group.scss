@@ -1,0 +1,39 @@
+.form-group {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	row-gap: 15px;
+
+	& > input,
+	& > textarea {
+		padding-inline: 10px;
+		padding-block: 5px;
+		border: none;
+		width: 445px;
+		height: 100%;
+		border: var(--border);
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	& input {
+		border-radius: 50px;
+	}
+
+	& textarea {
+		min-height: 215px;
+		border-radius: 20px;
+	}
+
+	&__error {
+		color: var(--color-red);
+	}
+
+	&.error {
+		& input {
+			border-color: var(--color-red);
+		}
+	}
+}
