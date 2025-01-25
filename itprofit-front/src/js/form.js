@@ -18,7 +18,7 @@ formEl.addEventListener('submit', event => {
 	const formData = new FormData(formEl)
 	formData.set('phone', mask.unmaskedValue)
 
-	fetch('http://localhost:5000/api', {
+	fetch('https://itprofit-test-backend.onrender.com', {
 		method: 'POST',
 		body: formData,
 	})
